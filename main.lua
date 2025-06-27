@@ -1,3 +1,4 @@
+
 -- Instances: 10 | Scripts: 4 | Modules: 0 | Tags: 0
 local G2L = {};
 
@@ -134,11 +135,11 @@ local function C_5()
 local script = G2L["5"];
 	local buton = script.Parent
 	local player = game.Players.LocalPlayer
-	local char = player.Character or player.CharacterAdded:Wait()
-	local root = char:WaitForChild("HumanoidRootPart")
-	local backpack = player:WaitForChild("Backpack")
 	
 	buton.MouseButton1Click:Connect(function()
+		local char = player.Character or player.CharacterAdded:Wait()
+		local root = char:WaitForChild("HumanoidRootPart")
+		local backpack = player:WaitForChild("Backpack")
 		root.CFrame = CFrame.new(141, 1, 222)
 		wait(1)
 		root.CFrame = CFrame.new(-22, 1, 329)
